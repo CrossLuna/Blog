@@ -1549,7 +1549,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c3df86;
+  background: #22fe40;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2134,7 +2134,7 @@ a.search-result {
   overflow: hidden;
 }
 body {
-  background: url("/images/violet-background.jpg");
+  background: url("../images/violet-background.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-attachment: fixed;
