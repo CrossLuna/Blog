@@ -85,21 +85,18 @@
 
 
 <meta name="description" content="這一章藉由一個複數編碼的問題為解題做一開端。
-##複數編碼問題
-###定義若對於兩個具有整數虛部及實部的複數$X$與$B$，存在一組自然數$an, a{n-1}, …, a_1, a_0$，其中每個自然數都小於$|B|$，能滿足$$X = anB^n+a{n-1}B^{n-1}+…+a_2B^2+a_1B+a_0$$則我們稱這組自然數$an, a{n-1}, …, a_1, a_0$構成一對$(X">
+複數編碼問題定義若對於兩個具有整數虛部及實部的複數$X$與$B$，存在一組自然數\(an, a{n-1}, …, a_1, a_0\)，其中每個自然數都小於\(|B|\)，能滿足[X = anB^n+a{n-1}B^{n-1}+…+a_2B^2+a_1B+a_0]則我們稱這組自然數\(an, a{n-1}, …, a_1, a_0\)構成一對\((X,">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Math Test">
 <meta property="og:url" content="http://crossluna.github.io/blog/2016/10/11/math-test/index.html">
 <meta property="og:site_name" content="CrossLuna">
 <meta property="og:description" content="這一章藉由一個複數編碼的問題為解題做一開端。
-##複數編碼問題
-###定義若對於兩個具有整數虛部及實部的複數$X$與$B$，存在一組自然數$an, a{n-1}, …, a_1, a_0$，其中每個自然數都小於$|B|$，能滿足$$X = anB^n+a{n-1}B^{n-1}+…+a_2B^2+a_1B+a_0$$則我們稱這組自然數$an, a{n-1}, …, a_1, a_0$構成一對$(X">
-<meta property="og:updated_time" content="2016-10-11T19:41:32.075Z">
+複數編碼問題定義若對於兩個具有整數虛部及實部的複數$X$與$B$，存在一組自然數\(an, a{n-1}, …, a_1, a_0\)，其中每個自然數都小於\(|B|\)，能滿足[X = anB^n+a{n-1}B^{n-1}+…+a_2B^2+a_1B+a_0]則我們稱這組自然數\(an, a{n-1}, …, a_1, a_0\)構成一對\((X,">
+<meta property="og:updated_time" content="2016-10-11T20:00:14.279Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Math Test">
 <meta name="twitter:description" content="這一章藉由一個複數編碼的問題為解題做一開端。
-##複數編碼問題
-###定義若對於兩個具有整數虛部及實部的複數$X$與$B$，存在一組自然數$an, a{n-1}, …, a_1, a_0$，其中每個自然數都小於$|B|$，能滿足$$X = anB^n+a{n-1}B^{n-1}+…+a_2B^2+a_1B+a_0$$則我們稱這組自然數$an, a{n-1}, …, a_1, a_0$構成一對$(X">
+複數編碼問題定義若對於兩個具有整數虛部及實部的複數$X$與$B$，存在一組自然數\(an, a{n-1}, …, a_1, a_0\)，其中每個自然數都小於\(|B|\)，能滿足[X = anB^n+a{n-1}B^{n-1}+…+a_2B^2+a_1B+a_0]則我們稱這組自然數\(an, a{n-1}, …, a_1, a_0\)構成一對\((X,">
 
 
 
@@ -300,8 +297,7 @@
 
       
         <p>這一章藉由一個複數編碼的問題為解題做一開端。</p>
-<p>##複數編碼問題</p>
-<p>###定義<br>若對於兩個具有整數虛部及實部的複數$X$與$B$，存在一組自然數$a<em>n, a</em>{n-1}, …, a_1, a_0$，其中每個自然數都小於$|B|$，能滿足<br>$$<br>X = a<em>nB^n+a</em>{n-1}B^{n-1}+…+a_2B^2+a_1B+a_0<br>$$<br>則我們稱這組自然數$a<em>n, a</em>{n-1}, …, a_1, a_0$構成一對$(X, B)$的編碼。有了以上關係，我們可以使用$a<em>n, a</em>{n-1}, …, a_1, a_0$來表示$X$，視其在一個以$B$為基底的數系上的投影。<br>我們的問題是，給定一對$(X, B)$，是不是能夠找到一組符合條件的$a<em>n, a</em>{n-1}, …, a_1, a_0$對其進行編碼。<br><em>輸入</em>: 為一個檔案，每行代表一組 $(X, B)$的四個整數，分別是$Re(X)$、$Im(X)$、$Re(B)$、$Im(B)$，其中$Re(X), Im(X) \leq 1000000$，$Re(B), Im(B) \leq 16$，如以下<code>code.in</code>所示<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">File: code.in</div><div class="line">0 1 1 1</div><div class="line">191 -192 11 -12</div><div class="line">0 0 1 1</div></pre></td></tr></table></figure></p>
+<h2 id="複數編碼問題"><a href="#複數編碼問題" class="headerlink" title="複數編碼問題"></a>複數編碼問題</h2><h3 id="定義"><a href="#定義" class="headerlink" title="定義"></a>定義</h3><p>若對於兩個具有整數虛部及實部的複數$X$與$B$，存在一組自然數\(a<em>n, a</em>{n-1}, …, a_1, a_0\)，其中每個自然數都小於\(|B|\)，能滿足<br>[<br>X = a<em>nB^n+a</em>{n-1}B^{n-1}+…+a_2B^2+a_1B+a_0<br>]<br>則我們稱這組自然數\(a<em>n, a</em>{n-1}, …, a_1, a_0\)構成一對\((X, B)\)的編碼。有了以上關係，我們可以使用\(a<em>n, a</em>{n-1}, …, a_1, a_0\)來表示\(X\)，視其在一個以\(B\)為基底的數系上的投影。<br>我們的問題是，給定一對\((X, B)\)，是不是能夠找到一組符合條件的\(a<em>n, a</em>{n-1}, …, a_1, a_0\)對其進行編碼。<br><em>輸入</em>: 為一個檔案，每行代表一組 \((X, B)\)的四個整數，分別是\(Re(X)\)、\(Im(X)\)、\(Re(B)\)、\(Im(B)\)，其中\(Re(X), Im(X) \leq 1000000\)，\(Re(B), Im(B) \leq 16\)，如以下<code>code.in</code>所示<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">File: code.in</div><div class="line">0 1 1 1</div><div class="line">191 -192 11 -12</div><div class="line">0 0 1 1</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -457,7 +453,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目錄</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#複數編碼問題"><span class="nav-number">1.</span> <span class="nav-text">複數編碼問題</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#定義"><span class="nav-number">1.1.</span> <span class="nav-text">定義</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
