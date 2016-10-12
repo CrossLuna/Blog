@@ -301,17 +301,19 @@
           
             <p>這一章藉由一個複數編碼的問題為解題做一開端。</p>
 <h2 id="複數編碼問題"><a href="#複數編碼問題" class="headerlink" title="複數編碼問題"></a>複數編碼問題</h2><h3 id="定義"><a href="#定義" class="headerlink" title="定義"></a>定義</h3>
-若對於兩個具有整數虛部及實部的複數$X$與$B$，存在一組自然數\\(a_n, a_{n-1}, ..., a_1, a_0\\)，其中每個自然數都小於\\(|B|\\)，能滿足
-\[
+若對於兩個具有整數虛部及實部的複數$X$與$B$，存在一組自然數$a_n, a_{n-1}, ..., a_1, a_0$，其中每個自然數都小於$|B|$，能滿足  
+
+$$
 X = a_nB^n+a_{n-1}B^{n-1}+...+a_2B^2+a_1B+a_0
-\]
-則我們稱這組自然數\\(a_n, a_{n-1}, ..., a_1, a_0\\)構成一對\\((X, B)\\)的編碼。有了以上關係，我們可以使用\\(a_n, a_{n-1}, ..., a_1, a_0\\)來表示\\(X\\)，視其在一個以\\(B\\)為基底的數系上的投影。  
+$$
+
+則我們稱這組自然數$a_n, a_{n-1}, ..., a_1, a_0$構成一對$(X, B)$的編碼。有了以上關係，我們可以使用$a_n, a_{n-1}, ..., a_1, a_0$來表示$X$，視其在一個以$B$為基底的數系上的投影。  
 
 
-我們的問題是，給定一對\\((X, B)\\)，是不是能夠找到一組符合條件的\\(a_n, a_{n-1}, ..., a_1, a_0\\)對其進行編碼。
+我們的問題是，給定一對$(X, B)$，是不是能夠找到一組符合條件的$a_n, a_{n-1}, ..., a_1, a_0$對其進行編碼。
 
 <p><em>輸入</em>: 
-為一個檔案，每行代表一組 \\((X, B)\\)的四個整數，分別是\\(Re(X)\\)、\\(Im(X)\\)、\\(Re(B)\\)、\\(Im(B)\\)，其中\\(Re(X), Im(X) \leq 1000000\\)，\\(Re(B), Im(B) \leq 16\\)，如以下<code>code.in</code>所示<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">File: code.in</div><div class="line">0 1 1 1</div><div class="line">191 -192 11 -12</div><div class="line">0 0 1 1</div></pre></td></tr></table></figure></p>
+為一個檔案，每行代表一組 $(X, B)$的四個整數，分別是$Re(X)$、$Im(X)$、$Re(B)$、$Im(B)$，其中$Re(X), Im(X) \leq 1000000$，$Re(B), Im(B) \leq 16$，如以下<code>code.in</code>所示<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">File: code.in</div><div class="line">0 1 1 1</div><div class="line">191 -192 11 -12</div><div class="line">0 0 1 1</div></pre></td></tr></table></figure></p>
 
           
         
