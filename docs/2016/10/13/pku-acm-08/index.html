@@ -84,19 +84,19 @@
 
 
 
-<meta name="description" content="本系列是整理2016年北京大學郭煒老師教授的ACM/ICPC暑期課投影片而成的筆記。數學部分並參考Victor Shoup所著的A Computational Introduction to Number Theory and Algebra
-數論整數基本性質整個數論的中心觀念就是整數的可除性 (divisibility)。，考慮整數集合$\mathbb{Z} = {..., -2, -1, 0,">
+<meta name="description" content="本系列是整理2016年北京大學郭煒老師教授的ACM/ICPC暑期課投影片而成的筆記。數學部分另外參考了 Victor Shoup 所著的 A Computational Introduction to Number Theory and Algebra
+數論整數基本性質整個數論的中心觀念就是整數的可除性 (divisibility)。，考慮整數集合 $\mathbb{Z} = {..., -2,">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2016北京大學ACM/ICPC暑期課筆記-8">
 <meta property="og:url" content="http://crossluna.github.io/blog/2016/10/13/pku-acm-08/index.html">
 <meta property="og:site_name" content="CrossLuna">
-<meta property="og:description" content="本系列是整理2016年北京大學郭煒老師教授的ACM/ICPC暑期課投影片而成的筆記。數學部分並參考Victor Shoup所著的A Computational Introduction to Number Theory and Algebra
-數論整數基本性質整個數論的中心觀念就是整數的可除性 (divisibility)。，考慮整數集合$\mathbb{Z} = {..., -2, -1, 0,">
-<meta property="og:updated_time" content="2016-10-14T05:17:44.000Z">
+<meta property="og:description" content="本系列是整理2016年北京大學郭煒老師教授的ACM/ICPC暑期課投影片而成的筆記。數學部分另外參考了 Victor Shoup 所著的 A Computational Introduction to Number Theory and Algebra
+數論整數基本性質整個數論的中心觀念就是整數的可除性 (divisibility)。，考慮整數集合 $\mathbb{Z} = {..., -2,">
+<meta property="og:updated_time" content="2016-10-14T19:40:37.669Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2016北京大學ACM/ICPC暑期課筆記-8">
-<meta name="twitter:description" content="本系列是整理2016年北京大學郭煒老師教授的ACM/ICPC暑期課投影片而成的筆記。數學部分並參考Victor Shoup所著的A Computational Introduction to Number Theory and Algebra
-數論整數基本性質整個數論的中心觀念就是整數的可除性 (divisibility)。，考慮整數集合$\mathbb{Z} = {..., -2, -1, 0,">
+<meta name="twitter:description" content="本系列是整理2016年北京大學郭煒老師教授的ACM/ICPC暑期課投影片而成的筆記。數學部分另外參考了 Victor Shoup 所著的 A Computational Introduction to Number Theory and Algebra
+數論整數基本性質整個數論的中心觀念就是整數的可除性 (divisibility)。，考慮整數集合 $\mathbb{Z} = {..., -2,">
 
 
 
@@ -296,10 +296,23 @@
       
 
       
-        <p>本系列是整理2016年北京大學郭煒老師教授的ACM/ICPC暑期課投影片而成的筆記。<br>數學部分並參考Victor Shoup所著的A Computational Introduction to Number Theory and Algebra</p>
-<h2 id="數論"><a href="#數論" class="headerlink" title="數論"></a>數論</h2><h3 id="整數基本性質"><a href="#整數基本性質" class="headerlink" title="整數基本性質"></a>整數基本性質</h3><p>整個數論的中心觀念就是整數的<em>可除性</em> (divisibility)。，考慮整數集合$\mathbb{Z} = {..., -2, -1, 0, 1, 2, ...}$中，有$a, b \in \mathbb{Z}$，我們說$a$可以<strong>整除</strong>$b$，如果存在$z\in\mathbb{Z}$使得$az = b$，記為$a\mid b$，反之則記為$a\nmid b$
+        <p>本系列是整理2016年北京大學郭煒老師教授的ACM/ICPC暑期課投影片而成的筆記。<br>數學部分另外參考了 Victor Shoup 所著的 A Computational Introduction to Number Theory and Algebra</p>
+<h2 id="數論"><a href="#數論" class="headerlink" title="數論"></a>數論</h2><h3 id="整數基本性質"><a href="#整數基本性質" class="headerlink" title="整數基本性質"></a>整數基本性質</h3><p>整個數論的中心觀念就是整數的<em>可除性</em> (divisibility)。，考慮整數集合 $\mathbb{Z} = {..., -2, -1, 0, 1, 2, ...}$ 中，有 $a, b \in \mathbb{Z}$ ，我們說 $a$ 可以<strong>整除</strong>$b$，如果存在 $z\in\mathbb{Z}$ 使得 $az = b$ ，記為 $a\mid b$ ，反之則記為 $a\nmid b$
 </p>
+<h4 id="定理-1-1-除法餘數性質"><a href="#定理-1-1-除法餘數性質" class="headerlink" title="定理 1.1 - 除法餘數性質"></a>定理 1.1 - 除法餘數性質</h4><p><quote>令 $a, b \in \mathbb{Z}$ 且 $b>0$ 存在唯一一組 $q, r\in \mathbb{Z}$ 使得 $a = bq + r$ 且 $0 \leq r \le b$
+</quote></p>
+<p><strong>證明</strong>   </p>
+ 考慮一非負整數集合 $S$ ，其中元素皆形如 $a-bt, t\in\mathbb{Z}$ ，此集合顯然非空 (Why? 如何<em>製造</em>它們?) ，由 Well-ordering principle<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>，我們知道這個集合有最小值，定義其為 $r$ 。僅由定義就可以滿足 $r = a-bq, q\in\mathb{Z}$ 以及 $r\geq 0$ 兩條件，另外 $r < b$ 也必然成立，否則將會有 $r-b$ 也在 $S$ 中且比 $r$ 小，與之前 $r$ 為最小值的假設矛盾，事實上 如果 $r \geq b$ ，我們總是可以找到 $0 \leq r-b = a - b(q+1)$ 這個更小的值。
+<br>
+至此我們已證明存在性，接著證明唯一性，若存在 $r, q$ 以及 $r', q'$ 兩組整數對滿足條件，藉由消去 $a$ 我們可以推得
+$$
+r' - r = b(q - q')
+$$
+發現 $r'- r$ 是 $q'-q$ 的倍數，然而我們已經知道 $0\leq r, r' < b$ ，因此 $\left| r'-r \right| < b$，因此唯一可能的情況就是 $r' - r = 0$ ，由於 $b\neq 0$ ，亦可得到 $q-q' = 0$ 。
+
 <h3 id="基本定理"><a href="#基本定理" class="headerlink" title="基本定理"></a>基本定理</h3>
+<p><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> <a href="https://en.wikipedia.org/wiki/Well-ordering_principle" target="_blank" rel="external">Well-ordering principle</a>: 任何非空的自然數子集，必定含有一個最小值，是一個由皮亞諾公理衍生的原理，無須證明，此原理與數學歸納法等價。</p>
+
       
     </div>
 
@@ -456,7 +469,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#數論"><span class="nav-number">1.</span> <span class="nav-text">數論</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#整數基本性質"><span class="nav-number">1.1.</span> <span class="nav-text">整數基本性質</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本定理"><span class="nav-number">1.2.</span> <span class="nav-text">基本定理</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#數論"><span class="nav-text">數論</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#整數基本性質"><span class="nav-text">整數基本性質</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#定理-1-1-除法餘數性質"><span class="nav-text">定理 1.1 - 除法餘數性質</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本定理"><span class="nav-text">基本定理</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
