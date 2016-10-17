@@ -68,7 +68,7 @@
 <link href="/blog/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="ACM,Competitive Programming,Math,Number Theory," />
+  <meta name="keywords" content="Math,Number Theory,ACM,Competitive Programming," />
 
 
 
@@ -92,7 +92,7 @@
 <meta property="og:site_name" content="CrossLuna">
 <meta property="og:description" content="本系列是整理2016年北京大學郭煒老師教授的ACM/ICPC暑期課投影片而成的筆記。數學部分另外參考了 Victor Shoup 所著的 A Computational Introduction to Number Theory and Algebra
 數論整數基本性質整個數論的中心觀念就是整數的可除性 (divisibility)。考慮整數集合 $\mathbb{Z} = {..., -2, -">
-<meta property="og:updated_time" content="2016-10-14T20:13:22.570Z">
+<meta property="og:updated_time" content="2016-10-14T20:28:03.683Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2016北京大學ACM/ICPC暑期課筆記-8">
 <meta name="twitter:description" content="本系列是整理2016年北京大學郭煒老師教授的ACM/ICPC暑期課投影片而成的筆記。數學部分另外參考了 Victor Shoup 所著的 A Computational Introduction to Number Theory and Algebra
@@ -299,7 +299,7 @@
         <p>本系列是整理2016年北京大學郭煒老師教授的ACM/ICPC暑期課投影片而成的筆記。<br>數學部分另外參考了 Victor Shoup 所著的 A Computational Introduction to Number Theory and Algebra</p>
 <h2 id="數論"><a href="#數論" class="headerlink" title="數論"></a>數論</h2><h3 id="整數基本性質"><a href="#整數基本性質" class="headerlink" title="整數基本性質"></a>整數基本性質</h3><p>整個數論的中心觀念就是整數的<em>可除性</em> (divisibility)。考慮整數集合 $\mathbb{Z} = {..., -2, -1, 0, 1, 2, ...}$ 中，有 $a, b \in \mathbb{Z}$ ，我們說 $a$ 可以<strong>整除</strong>$b$，如果存在 $z\in\mathbb{Z}$ 使得 $az = b$ ，記為 $a\mid b$ ，反之則記為 $a\nmid b$
 </p>
-<h4 id="定理-1-1-除法餘數性質"><a href="#定理-1-1-除法餘數性質" class="headerlink" title="定理 1.1 - 除法餘數性質"></a>定理 1.1 - 除法餘數性質</h4><p><quote>令 $a, b \in \mathbb{Z}$ 且 $b>0$ 存在唯一一組 $q, r\in \mathbb{Z}$ 使得 $a = bq + r$ 且 $0 \leq r \le b$
+<h4 id="定理-1-1-除法餘數性質"><a href="#定理-1-1-除法餘數性質" class="headerlink" title="定理 1.1 - 除法餘數性質"></a>定理 1.1 - 除法餘數性質</h4><p><quote>令 $a, b \in \mathbb{Z}$ 且 $b>0$ ，存在唯一一組 $q, r\in \mathbb{Z}$ 使得 $a = bq + r$ 且 $0 \leq r \le b$
 </quote></p>
 <p><strong>證明</strong>   </p>
  考慮一非負整數集合 $S$ ，其中元素皆形如 $a-bt, t\in\mathbb{Z}$ ，此集合顯然非空 ( Why? 如何<em>製造</em>它們? ) ，由 Well-ordering principle <sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>，我們知道這個集合有最小值，定義其為 $r$ 。僅由定義就可以滿足 $r = a-bq, q \in \mathbb{Z} $ 以及 $r\geq 0$ 兩條件，另外 $r < b$ 也必然成立，否則將會有 $r-b$ 也在 $S$ 中且比 $r$ 小，與之前 $r$ 為最小值的假設矛盾，事實上 如果 $r \geq b$ ，我們總是可以找到 
@@ -336,13 +336,13 @@ $$
       
         <div class="post-tags">
           
-            <a href="/blog/tags/ACM/" rel="tag">#ACM</a>
-          
-            <a href="/blog/tags/Competitive-Programming/" rel="tag">#Competitive Programming</a>
-          
             <a href="/blog/tags/Math/" rel="tag">#Math</a>
           
             <a href="/blog/tags/Number-Theory/" rel="tag">#Number Theory</a>
+          
+            <a href="/blog/tags/ACM/" rel="tag">#ACM</a>
+          
+            <a href="/blog/tags/Competitive-Programming/" rel="tag">#Competitive Programming</a>
           
         </div>
       
@@ -358,6 +358,10 @@ $$
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/blog/2016/10/17/math-teacher-didnt-tell-you/" rel="prev" title="小學數學老師沒告訴你的那些事">
+                小學數學老師沒告訴你的那些事 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -424,7 +428,7 @@ $$
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/blog/images/suzumoto.png"
+               src="/blog/images/suzumoto2.jpg"
                alt="CrossLuna" />
           <p class="site-author-name" itemprop="name">CrossLuna</p>
           <p class="site-description motion-element" itemprop="description">personal blog</p>
@@ -432,7 +436,7 @@ $$
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">文章</span>
             </a>
           </div>
