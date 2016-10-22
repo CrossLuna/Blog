@@ -104,7 +104,7 @@
 這兩個規則我們都可以琅琅上口，但當時老師們應該都沒有解釋得很清楚原因，這一系列的主要目的就是要說明為什麼會有這兩個規則。
 自然數
 大家都知道自然數就是 $1, 2, 3, ...$ ， 由於與生活經驗貼近因此容易想像，不過為了數學的操作證明，我們還是要嚴格定義自然數，在這邊我們使用Peano公理來給出自">
-<meta property="og:updated_time" content="2016-10-17T16:43:01.761Z">
+<meta property="og:updated_time" content="2016-10-22T08:27:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小學數學老師沒告訴你的那些事">
 <meta name="twitter:description" content="相信大家小學或中學一年級都學過四則運算，老師應該都會教你
@@ -336,12 +336,33 @@
   </li>
 </ol>
 
-<p>如此我們就有了自然數的嚴謹定義，然而這還不夠，我們更有興趣的是，有哪些運算可以用在這些集合上。</p>
-<h3 id="加法和乘法"><a href="#加法和乘法" class="headerlink" title="加法和乘法"></a>加法和乘法</h3>
+<p>如此我們就有了自然數的嚴謹定義，僅由這些公理，就可以推出自然數有一些性質</p>
+<h4 id="定理1"><a href="#定理1" class="headerlink" title="定理1"></a>定理1</h4>對任意的 $n\in\mathbb{N}$ 有 $n \neq n^+$
+<h4 id="定理2"><a href="#定理2" class="headerlink" title="定理2"></a>定理2</h4>設 $m \in \mathbb{N} , m\neq e$ ，則必有 $n \in \mathbb{N}, s.t. n^+ = m$ ，也就是除了 $e$ 以外的元素，都是某個元素的後繼，此唯一的元素我們也說是前導元素，記為 $m^-$
+<p>然而這還不夠，我們更有興趣的是，有哪些運算可以用在這些集合上。</p>
+<h3 id="加法"><a href="#加法" class="headerlink" title="加法"></a>加法</h3><h4 id="定理1-1"><a href="#定理1-1" class="headerlink" title="定理1"></a>定理1</h4>
+在自然數集合 $\mathbb{N}$ 唯一存在一個二元運算 $\oplus$ ，滿足以下條件
 
+<ol>
+<li>對於任何的 $n\in\mathbb{N}$，有
+$$
+n\oplus e = n^+
+$$
 
+</li>
+<li>對於任何的 $n, m\in\mathbb{N}$，有
+$$
+n \oplus m^+ = (n+m)^+
+$$
 
-<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2>
+</li>
+</ol>
+<p>滿足<strong>定理1</strong>的二元運算$\oplus$，我們就稱為是<strong>自然數集合</strong> $\mathbb{N}$ 上的<strong>加法運算</strong></p>
+
+<h3 id="乘法"><a href="#乘法" class="headerlink" title="乘法"></a>乘法</h3><h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ol>
+<li>潘承洞、初等數論、北京大學出版社、2003年</li>
+</ol>
+
       
     </div>
 
@@ -494,7 +515,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#自然數"><span class="nav-text">自然數</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Peano-公理"><span class="nav-text">Peano 公理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#加法和乘法"><span class="nav-text">加法和乘法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#參考資料"><span class="nav-text">參考資料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#自然數"><span class="nav-text">自然數</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Peano-公理"><span class="nav-text">Peano 公理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#定理1"><span class="nav-text">定理1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#定理2"><span class="nav-text">定理2</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#加法"><span class="nav-text">加法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#定理1-1"><span class="nav-text">定理1</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#乘法"><span class="nav-text">乘法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#參考資料"><span class="nav-text">參考資料</span></a></li></ol></div>
             
           </div>
         </section>

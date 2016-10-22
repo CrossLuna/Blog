@@ -321,12 +321,33 @@
   </li>
 </ol>
 
-<p>如此我們就有了自然數的嚴謹定義，然而這還不夠，我們更有興趣的是，有哪些運算可以用在這些集合上。</p>
-<h3 id="加法和乘法"><a href="#加法和乘法" class="headerlink" title="加法和乘法"></a>加法和乘法</h3>
+<p>如此我們就有了自然數的嚴謹定義，僅由這些公理，就可以推出自然數有一些性質</p>
+<h4 id="定理1"><a href="#定理1" class="headerlink" title="定理1"></a>定理1</h4>對任意的 $n\in\mathbb{N}$ 有 $n \neq n^+$
+<h4 id="定理2"><a href="#定理2" class="headerlink" title="定理2"></a>定理2</h4>設 $m \in \mathbb{N} , m\neq e$ ，則必有 $n \in \mathbb{N}, s.t. n^+ = m$ ，也就是除了 $e$ 以外的元素，都是某個元素的後繼，此唯一的元素我們也說是前導元素，記為 $m^-$
+<p>然而這還不夠，我們更有興趣的是，有哪些運算可以用在這些集合上。</p>
+<h3 id="加法"><a href="#加法" class="headerlink" title="加法"></a>加法</h3><h4 id="定理1-1"><a href="#定理1-1" class="headerlink" title="定理1"></a>定理1</h4>
+在自然數集合 $\mathbb{N}$ 唯一存在一個二元運算 $\oplus$ ，滿足以下條件
 
+<ol>
+<li>對於任何的 $n\in\mathbb{N}$，有
+$$
+n\oplus e = n^+
+$$
 
+</li>
+<li>對於任何的 $n, m\in\mathbb{N}$，有
+$$
+n \oplus m^+ = (n+m)^+
+$$
 
-<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2>
+</li>
+</ol>
+<p>滿足<strong>定理1</strong>的二元運算$\oplus$，我們就稱為是<strong>自然數集合</strong> $\mathbb{N}$ 上的<strong>加法運算</strong></p>
+
+<h3 id="乘法"><a href="#乘法" class="headerlink" title="乘法"></a>乘法</h3><h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ol>
+<li>潘承洞、初等數論、北京大學出版社、2003年</li>
+</ol>
+
           
         
       
