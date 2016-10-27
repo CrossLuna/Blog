@@ -363,7 +363,20 @@ $$
 <p>滿足<strong>定理2</strong>的二元運算$\otimes$，我們就稱為是<strong>自然數集合</strong> $\mathbb{N}$ 上的<strong>乘法運算</strong>，僅利用此二條件，我們就可以證明加法的結合律、交換律以及相消律。</p>
 <p>以外，我們也可以證明乘法與加法的分配律。</p>
 <h2 id="整數"><a href="#整數" class="headerlink" title="整數"></a>整數</h2><p>有了自然數的嚴謹定義之後，我們要利用自然數來建構整數。</p>
-<h4 id="定義2-整數"><a href="#定義2-整數" class="headerlink" title="定義2 (整數)"></a>定義2 (整數)</h4>我們定義空間 $\mathbb{N} \times \mathbb{N}$ 中，型為 $(a, b)$ 的一組自然數為<em>整數</em>，兩個整數 $(a, b)$ 與 $(c, d)$ 相等，若且唯若 $a+d=b+c$，我們使用 $\mathbb{Z}$ 來表示整數的集合
+<h4 id="定義2-1-整數"><a href="#定義2-1-整數" class="headerlink" title="定義2.1 (整數)"></a>定義2.1 (整數)</h4>我們定義空間 $\mathbb{N} \times \mathbb{N}$ 中，型為 $(a—b)$ 的一組自然數為<em>整數</em>，兩個整數 $(a—b)$ 與 $(c—d)$ 相等，若且唯若 $a+d=b+c$，我們使用 $\mathbb{Z}$ 來表示整數的集合
+<p>注意上面定義中的—並不是減法，只是一個暫定用來分隔兩數的破折號，不過確實是我們先有了減法及差的觀念之後，再回來利用這樣的觀念嚴謹定義，因此使用這個符號並不是偶然。</p>
+<p>有了整數的定義之後，接著定義整數上的運算</p>
+<h4 id="定義2-2-整數加法"><a href="#定義2-2-整數加法" class="headerlink" title="定義2.2 (整數加法)"></a>定義2.2 (整數加法)</h4>兩個整數 $(a—b)$ 和 $(c—d)$ 的加法可定義為
+$$
+(a—b) + (c—d) := ((a+c)—(b+d))
+$$
+  
+<h4 id="定義2-3-整數乘法"><a href="#定義2-3-整數乘法" class="headerlink" title="定義2.3 (整數乘法)"></a>定義2.3 (整數乘法)</h4>兩個整數 $(a—b)$ 和 $(c—d)$ 的乘法可定義為
+$$
+(a—b) \times (c—d) := ((ac + bd)—(ad + bc))
+$$
+
+<p>有了這些定義，我們可以證明</p>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ol>
 <li>潘承洞、初等數論、北京大學出版社、2003年</li>
 <li>Terence Tao, Analysis I: Third Edition, Springer, 30 Sep 2016</li>
@@ -771,7 +784,7 @@ $$
       <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/blog/images/suzumoto2.jpg"
+               src="/blog/images/gakki1.png"
                alt="CrossLuna" />
           <p class="site-author-name" itemprop="name">CrossLuna</p>
           <p class="site-description motion-element" itemprop="description">personal blog</p>
