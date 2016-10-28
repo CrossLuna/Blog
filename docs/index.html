@@ -306,14 +306,15 @@
 </ol>
 <p>這兩個規則我們都可以琅琅上口，但當時老師們應該都沒有解釋得很清楚原因，本文的主要目的就是要說明為什麼會有這兩個規則。不過在此之前，必須先對於我們所用的數字系統有所認識。</p>
 <h2 id="自然數"><a href="#自然數" class="headerlink" title="自然數"></a>自然數</h2>
-大家都知道自然數就是 $1, 2, 3, ...$ ， 由於與生活經驗貼近因此容易想像，不過為了數學的操作證明，我們還是要嚴格定義自然數，在這邊我們使用Peano公理來給出自然數的定義。
+大家都知道自然數就是 $1, 2, 3, ...$ ， 由於與生活經驗貼近因此容易想像，不過為了數學的操作證明，我們還是要嚴格定義自然數，
 
-<h3 id="Peano-公理"><a href="#Peano-公理" class="headerlink" title="Peano 公理"></a>Peano 公理</h3>
+<h3 id="Peano-公理"><a href="#Peano-公理" class="headerlink" title="Peano 公理"></a>Peano 公理</h3><p>在這邊我們使用義大利數學家 Giuseppe Peano 的公理來給出自然數的定義。</p>
+<h4 id="公理-1-Peano-公理"><a href="#公理-1-Peano-公理" class="headerlink" title="公理 1 (Peano 公理)"></a>公理 1 (Peano 公理)</h4>
 一個非空集合 $\mathbb{N}$ ，滿足以下條件
 <ol>
   <li>對任一元素 $n \in \mathbb{N}$ ，一定有唯一一個元素 $n^+$ 與之對應，稱為是其後繼元素
   </li>
-  <li>有一元素 $e \in \mathbb{N}$ ， 不是任何其他元素的後繼
+  <li>有一元素 $e \in \mathbb{N}$ ，不是任何其他元素的後繼
   </li>
   <li>任一元素至多是一個元素的後繼，也就是若 $a^+ = b^+$ 則 $a = b$
   </li>
@@ -321,11 +322,11 @@
   </li>
 </ol>
 
-<p>如此我們就有了自然數的嚴謹定義，僅由這些公理，就可以推出自然數有一些性質</p>
-<h4 id="定理1"><a href="#定理1" class="headerlink" title="定理1"></a>定理1</h4>對任意的 $n\in\mathbb{N}$ 有 $n \neq n^+$
-<h4 id="定理2"><a href="#定理2" class="headerlink" title="定理2"></a>定理2</h4>設 $m \in \mathbb{N} , m\neq e$ ，則必有 $n \in \mathbb{N}, s.t. n^+ = m$ ，也就是除了 $e$ 以外的元素，都是某個元素的後繼，此唯一的元素我們也說是前導元素，記為 $m^-$
+<p>我們也將<strong>公理 1.2</strong>中定義的這個特別的元素 $e$ ，記為我們熟悉的數字系統中的 $1$。<br>如此我們就有了自然數的嚴謹定義，僅由這些公理，就可以推出自然數有一些性質</p>
+<h4 id="定理1-1-後繼元素"><a href="#定理1-1-後繼元素" class="headerlink" title="定理1.1 (後繼元素)"></a>定理1.1 (後繼元素)</h4>對任意的 $n\in\mathbb{N}$ 有 $n \neq n^+$
+<h4 id="定理1-2-前導元素"><a href="#定理1-2-前導元素" class="headerlink" title="定理1.2 (前導元素)"></a>定理1.2 (前導元素)</h4>設 $m \in \mathbb{N} , m\neq e$ ，則必有 $n \in \mathbb{N}, s.t. n^+ = m$ ，也就是除了 $e$ 以外的元素，都是某個元素的後繼，此唯一的元素我們也說是前導元素，記為 $m^-$
 <p>然而這還不夠，我們更有興趣的是，有哪些運算可以用在這些集合上。</p>
-<h3 id="加法"><a href="#加法" class="headerlink" title="加法"></a>加法</h3><h4 id="定理1-1"><a href="#定理1-1" class="headerlink" title="定理1"></a>定理1</h4>
+<h3 id="加法"><a href="#加法" class="headerlink" title="加法"></a>加法</h3><h4 id="定理1-3-加法運算唯一存在"><a href="#定理1-3-加法運算唯一存在" class="headerlink" title="定理1.3 (加法運算唯一存在)"></a>定理1.3 (加法運算唯一存在)</h4>
 在自然數集合 $\mathbb{N}$ 唯一存在一個二元運算 $\oplus$ ，滿足以下條件
 
 <ol>
@@ -342,8 +343,8 @@ $$
 
 </li>
 </ol>
-<p>滿足<strong>定理1</strong>的二元運算$\oplus$，我們就稱為是<strong>自然數集合</strong> $\mathbb{N}$ 上的<strong>加法運算</strong>，僅利用此二條件，我們就可以證明加法的結合律、交換律以及相消律。</p>
-<h3 id="乘法"><a href="#乘法" class="headerlink" title="乘法"></a>乘法</h3><h4 id="定理2-1"><a href="#定理2-1" class="headerlink" title="定理2"></a>定理2</h4>
+<p>滿足<strong>定理1.3</strong>的二元運算$\oplus$，我們就稱為是<strong>自然數集合</strong> $\mathbb{N}$ 上的<strong>加法運算</strong>，僅利用此二條件，我們就可以證明加法的結合律、交換律以及相消律。</p>
+<h3 id="乘法"><a href="#乘法" class="headerlink" title="乘法"></a>乘法</h3><h4 id="定理1-4-乘法運算唯一存在"><a href="#定理1-4-乘法運算唯一存在" class="headerlink" title="定理1.4 (乘法運算唯一存在)"></a>定理1.4 (乘法運算唯一存在)</h4>
 在自然數集合 $\mathbb{N}$ 唯一存在一個二元運算 $\otimes$ ，滿足以下條件
 
 <ol>
@@ -360,8 +361,11 @@ $$
 
 </li>
 </ol>
-<p>滿足<strong>定理2</strong>的二元運算$\otimes$，我們就稱為是<strong>自然數集合</strong> $\mathbb{N}$ 上的<strong>乘法運算</strong>，僅利用此二條件，我們就可以證明加法的結合律、交換律以及相消律。</p>
-<p>以外，我們也可以證明乘法與加法的分配律。</p>
+<p>滿足<strong>定理1.4</strong>的二元運算$\otimes$，我們就稱為是<strong>自然數集合</strong> $\mathbb{N}$ 上的<strong>乘法運算</strong>，僅利用此二條件，我們就可以證明加法的結合律、交換律以及相消律。乘法與加法的左分配律、右分配律也都可以被證明。    </p>
+<p>此外，在這裡已經可以解決一個經常在網路上被用來故弄玄虛的命題。</p>
+<h4 id="定理1-5-1-1-2"><a href="#定理1-5-1-1-2" class="headerlink" title="定理1.5 (1+1=2)"></a>定理1.5 (1+1=2)</h4>$1+1=2$
+<p>TODO: 證明</p>
+<p>這與其說是證明了什麼，不如說是將這個命題中的每個符號定義好，結論就自然浮出，不過依循這個證明的過程，就可以用 Peano 公理層層演繹，建構我們熟知的自然數運算。</p>
 <h2 id="整數"><a href="#整數" class="headerlink" title="整數"></a>整數</h2><p>有了自然數的嚴謹定義之後，我們要利用自然數來建構整數。</p>
 <h4 id="定義2-1-整數"><a href="#定義2-1-整數" class="headerlink" title="定義2.1 (整數)"></a>定義2.1 (整數)</h4>我們定義空間 $\mathbb{N} \times \mathbb{N}$ 中，型為 $(a—b)$ 的一組自然數為<em>整數</em>，兩個整數 $(a—b)$ 與 $(c—d)$ 相等，若且唯若 $a+d=b+c$，我們使用 $\mathbb{Z}$ 來表示整數的集合
 <p>注意上面定義中的—並不是減法，只是一個暫定用來分隔兩數的破折號，不過確實是我們先有了減法及差的觀念之後，再回來利用這樣的觀念嚴謹定義，因此使用這個符號並不是偶然。</p>
@@ -376,8 +380,8 @@ $$
 (a—b) \times (c—d) := ((ac + bd)—(ad + bc))
 $$
 
-<p>有了這些定義，我們可以證明</p>
-<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ol>
+<p>定義這些運算之後，不難發現整數中也有一個特別的元素。</p>
+<h4 id="定義2-4-0"><a href="#定義2-4-0" class="headerlink" title="定義2.4 (0)"></a>定義2.4 (0)</h4><h4 id="定義2-5-相反數"><a href="#定義2-5-相反數" class="headerlink" title="定義2.5 (相反數)"></a>定義2.5 (相反數)</h4><h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ol>
 <li>潘承洞、初等數論、北京大學出版社、2003年</li>
 <li>Terence Tao, Analysis I: Third Edition, Springer, 30 Sep 2016</li>
 </ol>
